@@ -1,0 +1,42 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Authors:
+ *   Christopher Brown <audiere@gmail.com>
+ *   Ted Gould <ted@gould.cx>
+ *
+ * Copyright (C) 2007 Authors
+ *
+ * Released under GNU GPL v2+, read the file 'COPYING' for more information.
+ */
+#ifndef __EXTENSION_INTERNAL_BITMAP_COLORIZE_H__
+#define __EXTENSION_INTERNAL_BITMAP_COLORIZE_H__
+
+#include "imagemagick.h"
+
+#include "colors/color.h"
+
+namespace Inkscape {
+namespace Extension {
+namespace Internal {
+namespace Bitmap {
+
+
+class Colorize : public ImageMagick {
+public:
+    Colorize();
+
+    void applyEffect(Magick::Image *image) override;
+	void refreshParameters(Inkscape::Extension::Effect *module) override;
+
+    static void init ();
+
+private:
+    Colors::Color _color;
+};
+
+}; /* namespace Bitmap */
+}; /* namespace Internal */
+}; /* namespace Extension */
+}; /* namespace Inkscape */
+
+#endif

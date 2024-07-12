@@ -1,0 +1,7 @@
+#include "3rdparty/adaptagrams/libvpsc/block.cpp"
+#include "3rdparty/adaptagrams/libvpsc/blocks.cpp"
+#include "3rdparty/adaptagrams/libvpsc/cbuffer.cpp"
+#include "3rdparty/adaptagrams/libvpsc/constraint.cpp"
+#include "3rdparty/adaptagrams/libvpsc/rectangle.cpp"
+#include "3rdparty/adaptagrams/libvpsc/solve_VPSC.cpp"
+#include "3rdparty/adaptagrams/libvpsc/variable.cpp"
